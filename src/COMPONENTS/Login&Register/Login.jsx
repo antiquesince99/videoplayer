@@ -32,7 +32,9 @@ const LogIn = () => {
               icon: "success",
               title: "Hurray",
               text: "Logged in Successfully",
-            });
+            }).then( () => {
+              window.location.replace('/Addvideo');
+            } )
 
             return;
           }

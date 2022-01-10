@@ -34,7 +34,7 @@ const ListVideos = () => {
       return (
         <Grid container spacing={5}>
           {videoData.map((video) => (
-            <Grid item md={3}>
+            <Grid item md={3} key={video._id}>
               <Card>
                 <CardMedia
                   component="img"
@@ -116,7 +116,7 @@ const ListVideos = () => {
 
         <Grid container justifyContent="space-between" className="mb-3">
           <Grid item>
-            <h3 classNameName="subtitle">All Videos</h3>
+            <h3 className="subtitle">All Videos</h3>
           </Grid>
 
           <Grid item>

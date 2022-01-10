@@ -43,7 +43,9 @@ const Register = () => {
           icon: "success",
           title: "Welldone!",
           text: "You have successfully registered",
-        });
+        }).then( () => {
+          window.location.replace('/login');
+        } )
       });
       
   };

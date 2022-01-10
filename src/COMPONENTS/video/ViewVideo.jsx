@@ -26,11 +26,14 @@ const ViewVideo = () => {
   const displayVideo = () => {
     if (!loading) {
       return (
+        <div>
         <video
           className="img-fluid"
           src={url + "/" + videoDetail.file}
           controls
         ></video>
+        <h3>{videoDetail.title}</h3>
+        </div>
       );
     }
   };
